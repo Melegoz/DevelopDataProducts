@@ -1,0 +1,47 @@
+Diamond Selector
+========================================================
+author: Emanuele Melegari
+date: 23/11/2016
+width: 1920
+height: 1080
+autosize: true
+
+In trouble to find your engagement ring?
+========================================================
+
+I've got something to help you! It's a very simple app that will help you to find out relations between different diamonds characteristics.
+
+A diamond is characterized by:
+
+- Clarity
+- Color
+- Size (Carat)
+- Price (Euro in our case)
+- Cut
+
+My app, which is named Diamond Selector and can be found [here](https://melegari.shinyapps.io/diamondselector/), will help you in chosing the one which is best for you.
+
+Some background on data utilized
+========================================================
+
+```{r}
+library(ggplot2)
+data("diamonds")
+head(diamonds)[1:6,1:7]
+```
+
+How the app can help you
+========================================================
+
+The chart from the app will show you all the available conbinations of diamonds according to your selection (available in the dataset), divided by color, each color represents CALRITY. Clarity means that a diamond could be pure, which technically it's called **Inclusion Free (IF)**, this is the most rare and expesice one.
+Then you have **SI** which means **Small Inclusion**, ehich means if you look at it with a lense you will be able to see some impurity.
+
+When you will hover over the chart you will be able to display price/carat information for each dot
+
+Let's go and try it!
+========================================================
+[Diamond Selector app](https://melegari.shinyapps.io/diamondselector/)
+
+All the code needed to realize this app is available on my [github](https://github.com/Melegoz/DevelopDataProducts)
+
+Thank you for your time !!!
